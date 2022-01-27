@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "Download All",
+    "version": "1.0.0",
+    "description": "Downloads all hyperlinks on a webpage.",
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": false
+    },
+    "icons": {
+        "32": "icons/download-all.svg"
+    },
+    "page_action": {
+        "default_icon": "icons/download-all.svg",
+        "default_title": "Download all PDFs"
+    },
+    "background": {
+        "scripts": ["background_scripts/index.js"]
+    },
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "downloads",
+        "storage"
+    ]
+}

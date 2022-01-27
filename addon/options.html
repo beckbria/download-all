@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Download All Options</title></head>
+    <body>
+        <table>
+            <tr>
+                <td>Match (RegEx, one per line)</td>
+                <td><textarea id="matches"></textarea></td>
+            </tr>
+            <tr>
+                <td>Block (RegEx, one per line)</td>
+                <td><textarea id="rejects"></textarea></td>
+            </tr>
+            <tr>
+                <td>Batch Size</td>
+                <td><input type="text" id="batchSize"></td>
+            </tr>
+        </table>
+        <div id="status"></div>
+        <button id="save">Save</button> <button id="reset">Reset</button>
+        <script src="options.js"></script>
+    </body>
+</html>

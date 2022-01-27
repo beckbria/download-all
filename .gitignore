@@ -3,7 +3,12 @@ node_modules/
 
 # Build output
 /addon/**/*.js
+/addon/**.*.js.map
+/addon/manifest.json
+!/addon/options.js
 
 # Extension signing
 addon.crx
 addon.pem
+web-ext-artifacts/
+.web-extension-id

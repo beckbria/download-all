@@ -1,16 +1,20 @@
 {
-  "name": "download-all-pdfs",
+  "name": "download-all",
   "version": "1.0.0",
-  "description": "Downloads all PDF hyperlinks on a webpage.",
+  "description": "Downloads all hyperlinks on a webpage.",
   "scripts": {
-    "build": "webpack",
+    "build": "npm run compile && web-ext build -n download-all.zip -s addon --overwrite-dest",
+    "compile": "npm run genmanifest && webpack",
+    "genmanifest": "node ./tools/genmanifest.js ./src/manifest.json ./addon/manifest.json",
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "version": "npm run genmanifest"
   },
   "license": "MIT",
   "devDependencies": {
     "eslint": "^8.7.0",
+    "web-ext": "^6.6.0",
     "webextension-polyfill": "^0.8.0",
     "webpack": "^5.67.0",
     "webpack-cli": "^4.9.2"
