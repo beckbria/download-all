@@ -8,10 +8,20 @@
         "open_in_tab": false
     },
     "icons": {
-        "32": "icons/download-all.svg"
+        "16": "icons/icon16.png",
+        "32": "icons/icon32.png",
+        "64": "icons/icon64.png",
+        "128": "icons/icon128.png",
+        "256": "icons/icon256.png"
     },
     "page_action": {
-        "default_icon": "icons/download-all.svg",
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "32": "icons/icon32.png",
+            "64": "icons/icon64.png",
+            "128": "icons/icon128.png",
+            "256": "icons/icon256.png"
+        },
         "default_title": "Download all PDFs"
     },
     "background": {

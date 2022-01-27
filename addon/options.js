@@ -75,7 +75,6 @@ function restore_options() {
         rejects: [],
         batchSize: 10
     }, function(settings) {
-        alert(JSON.stringify(settings));
         accepts_element().value = settings.accepts.join("\n");
         rejects_element().value = settings.rejects.join("\n");
         batch_size_element().value = settings.batchSize;

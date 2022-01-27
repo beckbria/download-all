@@ -32,7 +32,6 @@ chrome.storage.sync.get({
         // Build the validators
         accepts = []
         rejects = []
-        alert(JSON.stringify(settings));
         for (const m of settings.accepts) {
             accepts.push(new RegExp(m));
         }
