@@ -2,10 +2,10 @@
 node_modules/
 
 # Build output
+/addon/**/*.html
 /addon/**/*.js
 /addon/**.*.js.map
 /addon/manifest.json
-!/addon/options.js
 
 # Extension signing
 addon.crx
